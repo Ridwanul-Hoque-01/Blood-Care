@@ -4,12 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Care</title>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(230, 57, 70, 0.8), rgba(244, 180, 180, 0.8));
+}
+.container {
+  background: rgba(255, 255, 255, 0.15);  /* translucent white */
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+/* Login Title - like first version */
+.container header {
+  font-size: 2.3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  color: #fff; 
+}
+input.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+button.btn {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.btn:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+}
+button.btn:active {
+  transform: scale(0.98);
+}
+
+/* Links */
+.links {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Error Message */
+.meassage {
+  background: rgba(255, 0, 0, 0.2);
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+</style>    
 </head>
+
 <body>
-    <header>Login </head>
+    <div class="container">
+    <header>Login </header>
     <form method="post">
         <div class="form-group">
-            <input type="text" calss="from-control" placeholder="User Id"utocomplete="off" required>
+            <input type="text" class="form-control" placeholder="User Id"name="User_Id"Autocomplete="off" required>
         </div>
 
         <div class="form-group">
@@ -19,11 +113,12 @@
         <div class="form-group">
             <button type="submit" class="btn" name="submit">Submit</button>
          </div>
-         
+
         <div class="links">
              Don't have an account? <a href="">Create Account</a>
         </div>
-    </form>            
+    </form>   
+</div>         
     
 </body>
 </html>
