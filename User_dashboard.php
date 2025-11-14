@@ -186,23 +186,27 @@ footer a {
             <h2>Blood Donation Blogs</h2>
 
             <div class="blog-card">
+                <img src="images/blood-donation-2842450_1280.jpg" alt="Donate Blood"style="width:100%; height:200px; object-fit: cover; object-position: top;">
                 <div class="blog-card-content">
-                    <h3>lalalala</h3>
-                    <p>dfdfdfd</p>
+                
+                    <h3>Why Donating Blood Saves Lives</h3>
+                    <p>Every blood donation can help save up to three lives. Donating is safe, simple, and critical to maintaining the blood supply in hospitals worldwide.</p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/nguy-n-hi-p-2rNHliX6XHk-unsplash.jpg" alt="Healthy Donation">
+                <div class="blog-card-content">
+                    <h3>Tips for a Healthy Donation</h3>
+                    <p>Eat well, stay hydrated, and rest before and after donating. These tips help ensure that both you and recipients benefit safely from your contribution.</p>
                 </div>
             </div>
 
             <div class="blog-card">
                 <div class="blog-card-content">
-                    <h3>lalalala</h3>
-                    <p>dfdfdfd</p>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-card-content">
-                    <h3>lalalala</h3>
-                    <p>dfdfdfd</p>
+                    <img src="images/blood-donation-5427229_1920.jpg" alt="Impact Story">
+                    <h3>Real Impact Stories</h3>
+                    <p>Learn how blood donations have saved lives in critical situations. Your contribution makes a difference in emergencies and for patients undergoing surgery.</p>
                 </div>
             </div>
 
