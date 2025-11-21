@@ -115,11 +115,11 @@
     <h3>Select Your Portal</h3>
 
    >
-    <form action="">
+    <form action="User_login.php">
       <button type="submit" class="btn" name="User">User</button>
     </form>
 
-    <form action="">
+    <form action="Admin_login.php">
       <button type="submit" class="btn" name="Admin">Admin</button>
     </form>
 
