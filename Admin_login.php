@@ -1,4 +1,53 @@
 
+<?php
+session_start();
+include 'database.php'; // keep same DB include
+
+/* ----------------- OOP CLASS ----------------- */
+class AdminLogin {
+    private $con;
+
+    public function __construct($con) {
+        $this->con = $con;
+    }
+
+    public function validateLogin($User_id, $password) {
+        $User_id = mysqli_real_escape_string($this->con, $User_id);
+        $password = mysqli_real_escape_string($this->con, $password);
+
+        $sql = "SELECT * FROM admin WHERE ID='$User_id' AND Password='$password'";
+        $result = mysqli_query($this->con, $sql);
+
+        if (!$result) {
+            die("Query Failed: " . mysqli_error($this->con));
+        }
+
+        return mysqli_fetch_assoc($result);
+    }
+}
+
+/* ----------------- OBJECT ----------------- */
+$admin = new AdminLogin($con);
+
+/* ----------------- HANDLE SUBMIT ----------------- */
+$message = ""; // For error message
+
+if (isset($_POST['submit'])) {
+    $User_id  = $_POST['Admin_Id'];
+    $password = $_POST['Password'];
+
+    $row = $admin->validateLogin($User_id, $password);
+
+    if (is_array($row) && !empty($row)) {
+        $_SESSION['ID'] = $row['ID'];
+        header("Location: admin.php");
+        exit();
+    } else {
+        $message = "<div class='meassage'><p>Wrong ID or Password</p></div>
+                    <a href='javascript:self.history.back()'><button class='btn'>Go Back</button></a>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +64,13 @@
 
 <div class="container">
 
+<?php
+// Show error if login fails
+echo $message;
 
+/* Only display form if not failed or not submitted */
+if (!isset($_POST['submit']) || $message == "") {
+?>
 
 <header>Login</header>
 
@@ -37,7 +92,7 @@
   </div>
 </form>
 
-
+<?php } ?>
 
 </div>
 

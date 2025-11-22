@@ -1,3 +1,47 @@
+
+<?php
+include 'database.php'; // same db include
+
+/* ----------------- OOP CLASS ----------------- */
+class DonorList {
+    private $con;
+
+    public function __construct($con) {
+        $this->con = $con;
+    }
+
+    public function searchDonor($search) {
+        if ($search != NULL) {
+            $sql = "SELECT * FROM donner WHERE Blood_Group='$search' AND Verified=1";
+        } else {
+            $sql = "SELECT * FROM donner WHERE Verified=1";
+        }
+        return mysqli_query($this->con, $sql);
+    }
+
+    public function getAllDonors() {
+        return mysqli_query($this->con, "SELECT * FROM donner WHERE Verified=1");
+    }
+}
+
+/* ----------------- CREATE OBJECT ----------------- */
+$donorObj = new DonorList($con);
+
+/* ----------------- HANDLE SEARCH (NO HTML HERE) ----------------- */
+if (isset($_POST['submit'])) {
+    $search = $_POST['search'];
+    $result = $donorObj->searchDonor($search);
+} else {
+    $result = $donorObj->getAllDonors();
+}
+
+if (!$result) {
+    die("query failed " . mysqli_error($con));
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,12 +84,14 @@
           </thead>
 
     <tbody>
-         <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
+        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+            <tr>
+                <td><?php echo $row['First_Name']; ?></td>
+                <td><?php echo $row['Last_Name']; ?></td>
+                <td><?php echo $row['Blood_Group']; ?></td>
+                <td><?php echo $row['Phone']; ?></td>
+            </tr>
+        <?php } ?>
     </tbody>
 </table>
 </div>

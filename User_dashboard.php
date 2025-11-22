@@ -1,3 +1,15 @@
+<?php
+ session_start();
+include 'database.php';
+if(!isset($_SESSION['ID']))
+{
+    header("Location:login.php");
+}
+
+$id=$_SESSION['ID'];
+$name=$_SESSION['Name'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -165,17 +177,17 @@ footer a {
 <body>
     <div class="header">
         <div>
-            <h2>Hello</h2>
-            <p>ID:</p>
+            <h2>Hello<b><?php echo $name ?></b></h2>
+            <p>ID:<?php echo $id ?></p>
         </div>
-        <form action="">
+        <form action="logout.php">
             <button type="submit" class="btn">Logout</button>
         </form>
     </div>
     <div class="container">
         <div class="sidebar">
-            <form action=""><button type="submit" class="btn">Want to Donate?</button></form>
-            <form action=""><button type="submit" class="btn">Looking for Donner?</button></form>
+            <form action="Donor_registration.php"><button type="submit" class="btn">Want to Donate?</button></form>
+            <form action="search.php"><button type="submit" class="btn">Looking for Donner?</button></form>
             <form action=""><button type="submit" class="btn">Donation History</button></form>
 
         </div>
