@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <?php
 class DonorVerification {
     private $con;
@@ -57,37 +56,22 @@ if (isset($_POST['update_status'])) {
 $result = $donorObj->getUnverifiedDonors();
 ?>
 
-=======
->>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<<<<<<< Updated upstream
 <title>Blood Care</title>
 <link rel="stylesheet" href="table_style.css">
 <style>
 .btn-verify { background-color: #28a745; }
 .btn-reject { background-color: #dc3545; }
-=======
-<title>Admin - Donor Verification</title>
-<link rel="stylesheet" href="table_style.css">
-<style>
-
->>>>>>> Stashed changes
 </style>
 </head>
 <body>
 
-<<<<<<< Updated upstream
 <!-- Navbar -->
 <div class="nav" style="margin-bottom: 20px;">
     <a href="Admin_dashboard.php">Admin Dashboard</a>
-=======
-
-<div class="nav" style="margin-bottom: 20px;">
-    <a href="admin.php">Admin Dashboard</a>
->>>>>>> Stashed changes
     <form action="logout.php" method="post">
         <button type="submit" class="btn">Logout</button>
     </form>
@@ -96,11 +80,7 @@ $result = $donorObj->getUnverifiedDonors();
 <div class="container-box">
 <header>Donor Verification</header>
 
-<<<<<<< Updated upstream
 <?php if (isset($message)) { echo $message; } ?>
-=======
-a
->>>>>>> Stashed changes
 
 <table class="styled-table">
     <thead>
@@ -118,7 +98,6 @@ a
         </tr>
     </thead>
     <tbody>
-<<<<<<< Updated upstream
         <?php while ($row = mysqli_fetch_assoc($result)) {
             $id      = $row['ID'];
             $fname   = $row['First_Name'];
@@ -155,24 +134,6 @@ a
         </tr>
         <?php } ?>
     </tbody>
-=======
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-
-            </td>
-        </tr>
-       </tbody>
->>>>>>> Stashed changes
 </table>
 
 </div>

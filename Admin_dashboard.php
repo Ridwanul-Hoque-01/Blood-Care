@@ -37,7 +37,7 @@ $id = $_SESSION['ID'];
   <div class="menu">
     <form action="Donor_verification.php"><button type="submit" class="btn">Donor Verification</button></form>
 
-    <form action="donor_list.php"><button type="submit" class="btn">Donor List</button></form>
+    <form action="Verified_Donor.php"><button type="submit" class="btn">Donor List</button></form>
 
     <form action="blood_bank_verification.php"><button type="submit" class="btn">Blood Bank Approval</button></form>
 
