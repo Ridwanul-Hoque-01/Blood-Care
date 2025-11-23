@@ -26,10 +26,10 @@ class AdminLogin {
     }
 }
 
-/* ----------------- OBJECT ----------------- */
+/* OBJECT  */
 $admin = new AdminLogin($con);
 
-/* ----------------- HANDLE SUBMIT ----------------- */
+
 $message = ""; // For error message
 
 if (isset($_POST['submit'])) {
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 
     if (is_array($row) && !empty($row)) {
         $_SESSION['ID'] = $row['ID'];
-        header("Location: admin.php");
+        header("Location: Admin_dashboard.php");
         exit();
     } else {
         $message = "<div class='meassage'><p>Wrong ID or Password</p></div>

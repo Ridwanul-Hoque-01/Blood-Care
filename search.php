@@ -2,7 +2,6 @@
 <?php
 include 'database.php'; // same db include
 
-/* ----------------- OOP CLASS ----------------- */
 class DonorList {
     private $con;
 
@@ -23,11 +22,9 @@ class DonorList {
         return mysqli_query($this->con, "SELECT * FROM donner WHERE Verified=1");
     }
 }
-
-/* ----------------- CREATE OBJECT ----------------- */
 $donorObj = new DonorList($con);
 
-/* ----------------- HANDLE SEARCH (NO HTML HERE) ----------------- */
+
 if (isset($_POST['submit'])) {
     $search = $_POST['search'];
     $result = $donorObj->searchDonor($search);
@@ -54,7 +51,7 @@ if (!$result) {
 <body>
      <div class="nav" style="margin-bottom:20px">
         <div class="logo">
-            <p><a href='userhome.php'>Logo</a></p>
+            <p><a href='userhome.php'>Blood Care</a></p>
         </div>
 
         <div class="right-links">
@@ -84,7 +81,8 @@ if (!$result) {
           </thead>
 
     <tbody>
-        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+       
+        <?php while ($row = mysqli_fetch_assoc($result)) { ?>  
             <tr>
                 <td><?php echo $row['First_Name']; ?></td>
                 <td><?php echo $row['Last_Name']; ?></td>

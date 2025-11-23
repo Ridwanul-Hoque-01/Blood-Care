@@ -60,13 +60,13 @@ class Donner {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="form_style.css">
-<title>Change Info</title>
+<title>Blood Care</title>
 </head>
 
 <body>
 
 <div class="nav">
-    <a href="User_dashboard.php">Logo</a>
+    <a href="User_dashboard.php">Blood Care</a>
     <form action="logout.php">
         <button type="submit" class="btn" style="width:auto;padding:8px 15px;">Logout</button>
     </form>
@@ -79,7 +79,7 @@ class Donner {
 
 
 
-/* -------------------- DATABASE INCLUDED SAME -------------------- */
+/* DATABASE INCLUDED SAME */
 
 include 'database.php';  // KEEPING EXACTLY SAME AS YOU REQUESTED
 $id = $_SESSION['ID'];
@@ -97,7 +97,7 @@ $re_phone     = $result['Phone'];
 $re_address   = $result['Address'];
 
 
-/* -------------------- FORM SUBMIT -------------------- */
+/*  FORM SUBMIT  */
 
 if (isset($_POST['submit'])) {
 
@@ -121,7 +121,6 @@ if (isset($_POST['submit'])) {
 } else {
 ?>
 
-<!-- -------------------- SAME HTML (UNCHANGED) -------------------- -->
 
 <header>Change Info</header>
 
