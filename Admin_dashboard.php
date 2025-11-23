@@ -35,7 +35,7 @@ $id = $_SESSION['ID'];
 <!-- CENTERED MENU -->
 <div class="center-box">
   <div class="menu">
-    <form action="donor_verification.php"><button type="submit" class="btn">Donor Verification</button></form>
+    <form action="Donor_verification.php"><button type="submit" class="btn">Donor Verification</button></form>
 
     <form action="donor_list.php"><button type="submit" class="btn">Donor List</button></form>
 
