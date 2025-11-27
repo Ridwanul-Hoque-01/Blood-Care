@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
 // Show error if login fails
 echo $message;
 
-/* Only display form if not failed or not submitted */
+
 if (!isset($_POST['submit']) || $message == "") {
 ?>
 
