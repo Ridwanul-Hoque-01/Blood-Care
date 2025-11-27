@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <?php if ($success): ?>
-        <button class="btn" onclick="window.location.href='banklogin.php'">Login Now</button>
+        <button class="btn" onclick="window.location.href='BloodBank_login.php'">Login Now</button>
         </div>
     </body>
     </html>
@@ -127,7 +127,7 @@ if (isset($_POST['submit'])) {
 
     <div class="links">
         Already have an account?
-        <a href="banklogin.php">Login</a>
+        <a href="BloodBank_login.php">Login</a>
     </div>
 </form>
 
