@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
         if ($row['verify'] == 1) {
             $_SESSION['ID'] = $row['Bank_ID'];
             $_SESSION['Name'] = $row['Name'];
-            header("Location: Blood Bank.php");
+            header("Location: BloodBank_Dashboard.php");
             exit();
         } else {
             $message = "Under Verification, Try later";

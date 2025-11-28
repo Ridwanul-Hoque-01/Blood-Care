@@ -123,7 +123,7 @@
       <button type="submit" class="btn" name="Admin">Admin</button>
     </form>
 
-    <form action="">
+    <form action="BloodBank_login.php">
       <button type="submit" class="btn" name="Blood">Blood Bank</button>
     </form>
   </div>

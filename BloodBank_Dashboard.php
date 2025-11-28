@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'co.php';
+include 'database.php';
 
 if(!isset($_SESSION['ID'])){
     header("Location:BloodBank_login.php");
@@ -184,7 +184,7 @@ footer{
     <div class="sidebar">
         <form action=".php"><button type="submit" class="btn">Blood Stock</button></form>
         <form action=".php"><button type="submit" class="btn">Transfer Blood</button></form>
-        <form action=".php"><button type="submit" class="btn">Record Donation</button></form>
+        <form action="record_donation.php"><button type="submit" class="btn">Record Donation</button></form>
     </div>
 
 
