@@ -128,7 +128,7 @@ if(isset($_POST['submit'])){
 <body>
 
 <div class="nav">
-    <a href="#">Blood Bank</a>
+    <a href="BloodBank_Dashboard.php">Blood Bank</a>
     <form action="logout.php"><button class="btn">Logout</button></form>
 </div>
 

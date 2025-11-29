@@ -80,7 +80,7 @@ $outgoing = mysqli_query($con, "SELECT * FROM blood_transfer_requests WHERE requ
 <body>
 
 <div class="nav">
-  <a href="Blood Bank.php">Dashboard</a>
+  <a href="BloodBank_Dashboard.php">Blood Bank</a>
   <form action="logout.php"><button class="btn">Logout</button></form>
 </div>
 

@@ -182,8 +182,8 @@ footer{
 
    
     <div class="sidebar">
-        <form action=".php"><button type="submit" class="btn">Blood Stock</button></form>
-        <form action=".php"><button type="submit" class="btn">Transfer Blood</button></form>
+        <form action="Blood_stock.php"><button type="submit" class="btn">Blood Stock</button></form>
+        <form action="transfer.php"><button type="submit" class="btn">Transfer Blood</button></form>
         <form action="record_donation.php"><button type="submit" class="btn">Record Donation</button></form>
     </div>
 
