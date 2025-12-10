@@ -65,7 +65,7 @@ $result = $donorObj->getVerifiedDonors();
 
 <!-- Navbar -->
 <div class="nav" style="margin-bottom:20px;">
-    <a href="admin.php">Admin Dashboard</a>
+    <a href="Admin_dashboard.php">Admin Dashboard</a>
     <form action="logout.php">
         <button type="submit" class="btn">Logout</button>
     </form>

@@ -39,11 +39,11 @@ $id = $_SESSION['ID'];
 
     <form action="Verified_Donor.php"><button type="submit" class="btn">Donor List</button></form>
 
-    <form action="blood_bank_verification.php"><button type="submit" class="btn">Blood Bank Approval</button></form>
+    <form action="Blood_bank_verify.php"><button type="submit" class="btn">Blood Bank Approval</button></form>
 
     <form action="Blood_Bank_List.php"><button type="submit" class="btn">Blood Bank List</button></form>
 
-    <form action="adminblood stock.php"><button type="submit" class="btn">Blood Stock</button></form>
+    <form action="Admin_blood_stock.php"><button type="submit" class="btn">Blood Stock</button></form>
 
     <form action="Trasfer_List.php"><button type="submit" class="btn">View Transfers</button></form>
   </div>

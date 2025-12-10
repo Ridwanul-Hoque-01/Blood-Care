@@ -177,7 +177,7 @@ footer a {
 <body>
     <div class="header">
         <div>
-            <h2>Hello<b><?php echo $name ?></b></h2>
+            <h2>Hello <b><?php echo $name ?></b></h2>
             <p>ID:<?php echo $id ?></p>
         </div>
         <form action="logout.php">
@@ -188,7 +188,7 @@ footer a {
         <div class="sidebar">
             <form action="Donor_registration.php"><button type="submit" class="btn">Want to Donate?</button></form>
             <form action="search.php"><button type="submit" class="btn">Looking for Donner?</button></form>
-            <form action=""><button type="submit" class="btn">Donation History</button></form>
+            <form action="Donor_History.php"><button type="submit" class="btn">Donation History</button></form>
 
         </div>
         <div class="main-content">

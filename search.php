@@ -51,7 +51,7 @@ if (!$result) {
 <body>
      <div class="nav" style="margin-bottom:20px">
         <div class="logo">
-            <p><a href='userhome.php'>Blood Care</a></p>
+            <p><a href='User_dashboard.php'>Dashboard</a></p>
         </div>
 
         <div class="right-links">

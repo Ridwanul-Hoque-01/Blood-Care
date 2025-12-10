@@ -51,7 +51,7 @@ $result = $donor->getDonor();
 </head>
 <body>
     <div class="nav">
-        <a href="javascript:self.history.back()">Blood Care</a>
+        <a href="javascript:self.history.back()">Dashboard</a>
         <form action="logout.php"><button class="btn" style="width:auto,padding:8px 15px;">Logout</button></form>
 </div>
 <div class="container-box">

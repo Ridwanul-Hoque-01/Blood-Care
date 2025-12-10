@@ -50,7 +50,7 @@ header {
 <body>
 
 <div class="nav" style="margin-bottom: 20px;">
-    <div class="logo"><p><a href="admin.php">Admin Dashboard</a></p></div>
+    <div class="logo"><p><a href="Admin_dashboard.php">Admin Dashboard</a></p></div>
     <div class="right-links">
         <form action="logout.php" method="post">
             <button type="submit" class="btn">Logout</button>

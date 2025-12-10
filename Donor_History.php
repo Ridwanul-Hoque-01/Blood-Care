@@ -14,7 +14,7 @@
 <body>
 
 <div class="nav">
-    <a href="userhome.php">Logo</a>
+    <a href="User_dashboard.php">Dashboard</a>
     <form action="logout.php">
         <button type="submit" class="btn" style="width:auto;">Logout</button>
     </form>
