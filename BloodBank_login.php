@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div class="links">
-    Don't have an account? <a href="bankcreate.php">Create Account</a>
+    Don't have an account? <a href="Register_bank.php">Create Account</a>
   </div>
 
 </form>
