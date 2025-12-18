@@ -1,0 +1,104 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.85), rgba(244, 180, 180, 0.85));
+    margin:0;
+     padding:30px;
+}
+.nav {
+    max-width: 1300px;
+     margin:0 auto 25px auto;
+    padding: 20px 30px;
+    background: rgba(255,255,255,0.15); 
+    backdrop-filter: blur(8px);
+    border-radius: 12px; display:flex;
+     justify-content:space-between;
+}
+
+.nav a {
+    text-decoration:none; 
+    font-size:22px; color:#fff; 
+    font-weight:600;
+}
+.btn {
+    padding:10px 15px;
+     background:#e63946;
+      color:white; 
+      border:none;
+      border-radius:10px; 
+      cursor:pointer; 
+      transition:.3s;
+    }
+.btn:hover {
+    background:#b71c1c;
+}
+.container-box {
+    max-width:1300px; 
+    margin:auto;
+    background: rgba(255,255,255,0.18); 
+    backdrop-filter: blur(12px);
+    padding:50px;
+     border-radius:20px; 
+     box-shadow:0 8px 24px rgba(0,0,0,0.25);
+      color:#fff;
+}
+header {
+    font-size:2.3em;
+     font-weight:600;
+      text-align:center;
+       margin-bottom:35px;
+    }
+.form-section {
+    background: rgba(255,255,255,0.25);
+     padding:20px; border-radius:12px; 
+     margin-bottom:30px;
+    }
+.form-group {
+    margin-bottom:15px;
+}
+.form-group label {
+    display:block; 
+    margin-bottom:5px; 
+    font-weight:500;
+}
+.form-group input,
+ .form-group select {
+    width:100%;
+     padding:14px; 
+     border-radius:10px;
+      border:none; 
+      background:rgba(255,255,255,0.28);
+       color:#000;
+    }
+input:focus, select:focus {
+    outline:none; 
+    background:rgba(255,255,255,0.35);
+}
+.meassage {
+    padding:12px; 
+    border-radius:8px; 
+    margin-bottom:20px; 
+    text-align:center; 
+    font-weight:500;
+}
+.success {
+    background: rgba(0,255,0,0.25); 
+    color:#fff;
+}
+.error {
+    background: rgba(255,0,0,0.25); 
+    color:#fff;
+}
+table {
+    width:100%; 
+    border-collapse:collapse; 
+    margin-top:20px; 
+    background:rgba(255,255,255,0.15);
+     border-radius:10px;
+      overflow:hidden;
+    }
+th,td {padding:10px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.3);}
+th {background:rgba(91,130,214,0.85); color:#fff;}
+.btn-action {padding:5px 10px; border:none; border-radius:8px; cursor:pointer; margin-right:5px;}
+.btn-accept {background:rgba(40,167,69,0.85); color:#fff;}
+.btn-reject {background:rgba(220,53,69,0.85); color:#fff;}
